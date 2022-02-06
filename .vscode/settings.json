@@ -1,0 +1,25 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript"
+  ],
+  "cSpell.words": [
+    "destructure",
+    "ghslp",
+    "Heaslip",
+    "Immer",
+    "mixins",
+    "mizdra",
+    "rushstack",
+    "tsdoc"
+  ],
+  "markdown.extension.toc.levels": "2..6",
+  "search.exclude": {
+    "CHANGELOG.markdown": true,
+    "LICENSE": true,
+    "package-lock.json": true
+  }
+}
