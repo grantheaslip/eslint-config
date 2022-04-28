@@ -1,14 +1,14 @@
 {
-  "name": "@ghslp/eslint-config",
+  "name": "@grantheaslip/eslint-config",
   "version": "0.1.0",
   "description": "ESLint config for personal projects",
   "author": {
     "name": "Grant Heaslip",
-    "email": "g@hslp.ca",
-    "url": "https://g.hslp.ca/"
+    "email": "grant@grantheaslip.ca",
+    "url": "https://grantheaslip.ca/"
   },
   "license": "MIT",
-  "repository": "ghslp/eslint-config",
+  "repository": "grantheaslip/eslint-config",
   "files": [
     "next.js",
     "react.js"
