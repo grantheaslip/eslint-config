@@ -1,7 +1,3 @@
-const {
-  defaultOrder,
-} = require("@typescript-eslint/eslint-plugin/dist/rules/member-ordering");
-
 const eslintConfig = {
   extends: [
     "@rushstack/eslint-config/profile/web-app",
@@ -68,12 +64,18 @@ const eslintConfig = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/member-ordering": [
       "warn",
-      { default: { memberTypes: defaultOrder, order: "alphabetically" } },
+      {
+        default: {
+          memberTypes: ["signature", "field"],
+          order: "alphabetically",
+        },
+      },
     ],
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/typedef": "off",
 
     // --------------------------------

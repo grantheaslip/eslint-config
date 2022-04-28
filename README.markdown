@@ -1,4 +1,4 @@
-# @ghslp/eslint-config
+# @grantheaslip/eslint-config
 
 Shared ESLint config for personal projects.
 
@@ -11,7 +11,7 @@ Shared ESLint config for personal projects.
 ### Install
 
 ```sh
-npm install @ghslp/eslint-config --save-dev
+npm install @grantheaslip/eslint-config --save-dev
 ```
 
 ### Add to ESLint config
@@ -25,11 +25,11 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
   extends: [
     // Include for all projects:
-    "@ghslp/eslint-config",
+    "@grantheaslip/eslint-config",
     // Include for React projects:
-    "@ghslp/eslint-config/react"
+    "@grantheaslip/eslint-config/react"
     // Include for React + Next.js projects:
-    "@ghslp/eslint-config/react"
+    "@grantheaslip/eslint-config/react"
   ],
 };
 ```
