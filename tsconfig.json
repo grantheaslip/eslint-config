@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "strict": true,
+    "target": "ES2019"
+  },
+  "include": [
+    "*.js",
+    ".eslintrc.js"
+  ]
+}

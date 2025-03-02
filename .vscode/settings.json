@@ -1,25 +1,37 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.enable": true,
-  "eslint.validate": [
-    "javascript"
-  ],
   "cSpell.words": [
     "destructure",
     "grantheaslip",
     "Heaslip",
     "Immer",
-    "mixins",
     "mizdra",
     "rushstack",
-    "tsdoc"
+    "tsdoc",
+    "usememo"
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript"
+  ],
+  "files.exclude": {
+    "dist": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
   "markdown.extension.toc.levels": "2..6",
   "search.exclude": {
-    "CHANGELOG.markdown": true,
     "LICENSE": true,
     "package-lock.json": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[github-actions-workflow][javascript][json][jsonc][markdown][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   }
 }

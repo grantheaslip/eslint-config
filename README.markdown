@@ -3,8 +3,8 @@
 Shared ESLint config for personal projects.
 
 - [How to use](#how-to-use)
-    - [Install](#install)
-    - [Add to ESLint config](#add-to-eslint-config)
+  - [Install](#install)
+  - [Add to ESLint config](#add-to-eslint-config)
 
 ## How to use
 
