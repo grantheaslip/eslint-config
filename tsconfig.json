@@ -3,21 +3,19 @@
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
-    "declarationMap": true,
+    "emitDeclarationOnly": true,
     "exactOptionalPropertyTypes": true,
     "esModuleInterop": true,
-    "incremental": true,
     "jsx": "react",
     "moduleResolution": "Node16",
     "module": "Node16",
     "noImplicitAny": false,
-    "outDir": "dist",
+    "outDir": "types",
     "strict": true,
     "target": "ES2019"
   },
   "include": [
-    "**/*.mjs",
-    "**/*.js",
-    "src/**/*.js"
+    "configs/*.js",
+    "index.js"
   ]
 }
