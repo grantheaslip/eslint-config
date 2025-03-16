@@ -16,22 +16,19 @@ npm install @grantheaslip/eslint-config --save-dev
 
 ### Add to ESLint config
 
-Create a `.eslintrc.js` containing (at least) the following:
+Create an `eslint.config.js` containing:
 
 ```js
-// Workaround for https://github.com/eslint/eslint/issues/3458
-require("@rushstack/eslint-patch/modern-module-resolution");
+import grantheaslip from "@grantheaslip/eslint-config";
 
-module.exports = {
+const eslintConfig = defineConfig({
   extends: [
-    // Include for all projects:
-    "@grantheaslip/eslint-config",
-    // Include for React projects:
-    "@grantheaslip/eslint-config/react",
-    // Include for Next.js projects:
-    "@grantheaslip/eslint-config/next",
-    // Include for TypeScript projects:
-    "@grantheaslip/eslint-config/typescript",
+    grantheaslip.base, // (for all projects)
+    grantheaslip.typescript, // (for TypeScript projects)
+    grantheaslip.react, // (for React projects)
+    grantheaslip.next, // (for Next.js projects)
   ],
-};
+});
+
+export default eslintConfig;
 ```

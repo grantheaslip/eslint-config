@@ -4,17 +4,20 @@
     "checkJs": true,
     "declaration": true,
     "declarationMap": true,
+    "exactOptionalPropertyTypes": true,
     "esModuleInterop": true,
     "incremental": true,
     "jsx": "react",
-    "moduleResolution": "Node",
-    "noImplicitAny": true,
+    "moduleResolution": "Node16",
+    "module": "Node16",
+    "noImplicitAny": false,
     "outDir": "dist",
     "strict": true,
     "target": "ES2019"
   },
   "include": [
-    "*.js",
-    ".eslintrc.js"
+    "**/*.mjs",
+    "**/*.js",
+    "src/**/*.js"
   ]
 }
