@@ -1,5 +1,9 @@
 # @grantheaslip/eslint-config changelog
 
+## 0.3.1 [2025-03-16]
+
+- Fix import typing in consuming packages(?)
+
 ## 0.3.0 [2025-03-16]
 
 - Update to ESLint 9 and flat config format; adopt `eslint-plugin-perfectionist` and `eslint-plugin-security`; misc. improvements
