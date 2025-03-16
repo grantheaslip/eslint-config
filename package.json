@@ -1,6 +1,6 @@
 {
   "name": "@grantheaslip/eslint-config",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ESLint config for personal projects",
   "author": {
     "name": "Grant Heaslip",
@@ -14,18 +14,24 @@
   },
   "type": "module",
   "sideEffects": false,
-  "exports": "./index.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "default": "./index.js"
+  },
   "files": [
     "configs/**/*.js",
+    "types/**/*.d.ts",
     "index.js"
   ],
   "scripts": {
     "eslint-check": "eslint . --ext='js,ts,tsx'",
     "eslint-fix": "eslint . --ext='js,ts,tsx' --fix",
     "lint": "run-p -l eslint-check prettier-check tsc-check",
+    "prepack": "run-s tsc",
     "prettier-check": "prettier --check .",
     "prettier-write": "prettier --write .",
     "npm-check-updates": "npm-check-updates",
+    "tsc": "tsc",
     "tsc-check": "tsc --noEmit"
   },
   "dependencies": {

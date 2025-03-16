@@ -37,7 +37,7 @@ const perfectionistRecommendedNaturalRulesWithWarnSeverity = Object.keys(
   });
 }, /** @type {RulesRecord} */ ({}));
 
-const base = defineConfig([
+const baseConfig = defineConfig([
   globalIgnores([".next*/*", ".yalc/*"]),
   {
     extends: [js.configs.recommended, prettier, security.configs.recommended],
@@ -115,4 +115,4 @@ const base = defineConfig([
   // },
 ]);
 
-export default base;
+export default baseConfig;
