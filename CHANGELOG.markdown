@@ -1,5 +1,9 @@
 # @grantheaslip/eslint-config changelog
 
+## 0.3.0 [2025-03-16]
+
+- Update to ESLint 9 and flat config format; adopt `eslint-plugin-perfectionist` and `eslint-plugin-security`; misc. improvements
+
 ## [0.2.0](https://github.com/grantheaslip/eslint-config/pulls?q=is%3Apr+milestone%3A0.2.0) [2025-03-02]
 
 - Updated rules, dependencies, and scripts [[#2](https://github.com/grantheaslip/eslint-config/pull/2)]

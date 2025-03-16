@@ -1,6 +1,6 @@
 {
   "name": "@grantheaslip/eslint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "ESLint config for personal projects",
   "author": {
     "name": "Grant Heaslip",
@@ -8,48 +8,51 @@
     "url": "https://grantheaslip.ca/"
   },
   "license": "MIT",
-  "repository": "grantheaslip/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantheaslip/eslint-config.git"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": "./index.js",
   "files": [
-    "next.js",
-    "react.js",
-    "typescript.js"
+    "configs/**/*.js",
+    "index.js"
   ],
-  "main": "index.js",
   "scripts": {
     "eslint-check": "eslint . --ext='js,ts,tsx'",
     "eslint-fix": "eslint . --ext='js,ts,tsx' --fix",
-    "lint": "run-p -l eslint-check prettier-check",
+    "lint": "run-p -l eslint-check prettier-check tsc-check",
     "prettier-check": "prettier --check .",
     "prettier-write": "prettier --write .",
     "npm-check-updates": "npm-check-updates",
     "tsc-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@emotion/eslint-plugin": "^11.12.0",
-    "@mizdra/eslint-plugin-layout-shift": "^1.0.1",
-    "@next/eslint-plugin-next": "^15.2.0",
-    "@rushstack/eslint-patch": "^1.10.5",
-    "@typescript-eslint/eslint-plugin": "^8.25.0",
-    "@typescript-eslint/parser": "^8.25.0",
-    "eslint-config-prettier": "^10.0.2",
+    "@arthurgeron/eslint-plugin-react-usememo": "^2.4.4",
+    "@eslint/compat": "^1.2.7",
+    "@eslint/js": "^9.22.0",
+    "@next/eslint-plugin-next": "^15.2.2",
+    "@rushstack/eslint-patch": "^1.11.0",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^4.10.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-memo": "^0.0.3",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-sort-destructure-keys": "^2.0.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2"
+    "eslint-plugin-security": "^3.0.1",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.26.1"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.12",
-    "@types/node": "^22.13.8",
-    "eslint": "^8.57.1",
-    "npm-check-updates": "^16.14.20",
+    "@types/eslint-plugin-security": "^3.0.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "npm-check-updates": "^17.1.15",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.5.2",
-    "typescript": "~5.7.3"
+    "prettier": "^3.5.3",
+    "typescript": "~5.8.2"
   },
   "peerDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": "^9.22.0"
   }
 }
